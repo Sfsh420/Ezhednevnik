@@ -64,6 +64,7 @@ public class Note{
 
     public void setImportant(boolean important) {
         isImportant = important;
+        modificatedDate = new Date();
     }
 
     public String getText() {
@@ -81,6 +82,7 @@ public class Note{
 
     public void setName(String name) {
         this.name = name;
+        modificatedDate = new Date();
     }
 
     @Override

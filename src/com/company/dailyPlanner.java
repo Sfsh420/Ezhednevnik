@@ -13,6 +13,7 @@ public class dailyPlanner {
     dailyPlanner(){
         this.notes = new HashMap<>();
     }
+
     dailyPlanner(long seed){
         this.seed = seed;
         this.random = new Random(seed);
@@ -20,7 +21,14 @@ public class dailyPlanner {
     }
 
     public void addNote(Note note){
-        notes.put(Math.abs(random.nextInt()%100), note);
+        int id;
+        while (notes.containsKey(id = Math.abs(random.nextInt() % 1000))){
+            if (notes.size() >= 1000) {
+                System.out.println("Ежедневник переполнен");
+                return;
+            }
+        };
+        notes.put(id, note);
     }
 
     public long getSeed() {
