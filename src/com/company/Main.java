@@ -20,8 +20,8 @@ public class Main {
         scanner = new Scanner(System.in);
         dailyPlanner dp = null;
         String filepath = "";
-        System.out.println("Студент: Кульба Н.А.");
-        System.out.println("Группа: БАСО-02-18");
+        System.out.println("Студент: Чекулаев Н.Р");
+        System.out.println("Группа: БАСО-03-18");
         System.out.println("\n");
         System.out.println("Выберите пункт меню:");
         System.out.println("1. Новый ежедневник");
